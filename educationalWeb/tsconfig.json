@@ -1,7 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": { "*": ["types/*"] },
+    "paths": { "*": ["types/*"],"jszip": [
+        "node_modules/jszip/dist/jszip.min.js"
+      ] },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

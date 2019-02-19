@@ -2,15 +2,8 @@ import { Injectable } from '@angular/core';
 
 
 let images: string[] = [
-  "images/gallery/1.jpg",
-  "images/gallery/2.jpg",
-  "images/gallery/3.jpg",
-  "images/gallery/4.jpg",
-  "images/gallery/5.jpg",
-  "images/gallery/6.jpg",
-  "images/gallery/7.jpg",
-  "images/gallery/8.jpg",
-  "images/gallery/9.jpg"];
+"https://marketplace.magento.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/f/a/facebook_login_2.png",
+];
 
 @Injectable({
   providedIn: 'root'
