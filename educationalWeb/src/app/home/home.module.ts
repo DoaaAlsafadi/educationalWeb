@@ -8,13 +8,16 @@ import { NewsComponent } from './news/news.component';
 import { AdviceComponent } from './advice/advice.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { RouterModule } from '@angular/router';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { CountUpModule } from 'countup.js-angular2';
 
 @NgModule({
   declarations: [
     ImagesSliderComponent,
     HomeComponent,
     NewsComponent,
-    AdviceComponent
+    AdviceComponent,
+    StatisticsComponent
   ],
 
   imports: [
@@ -22,7 +25,8 @@ import { RouterModule } from '@angular/router';
     DxGalleryModule,
     DxCheckBoxModule,
     HomeRoutingModule,
-    RouterModule
+    RouterModule,
+    CountUpModule
   ],
   providers: [HomeService],
 
