@@ -1,3 +1,14 @@
-<p>
-  news works!
-</p>
+<div class="widget-container">
+  <dx-gallery
+    #gallery
+    id="gallery"
+    [dataSource]="dataSource"
+    [slideshowDelay]="2000"
+    [loop]="true"
+    [showIndicator]="true"
+    [height]="350"
+    [width]="450"
+    [initialItemWidth]="150"
+    [stretchImages]="true"
+  ></dx-gallery>
+</div>
