@@ -7,7 +7,7 @@ import { HomeComponent } from './home.component';
 import { NewsComponent } from './news/news.component';
 import { AdviceComponent } from './advice/advice.component';
 import { HomeRoutingModule } from './home-routing.module';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,21 +17,20 @@ import { HomeRoutingModule } from './home-routing.module';
     AdviceComponent
   ],
 
-  imports:[
+  imports: [
     CommonModule,
-    DxGalleryModule
+    DxGalleryModule,
     DxCheckBoxModule,
-
+    HomeRoutingModule,
+    RouterModule
   ],
-  providers: [
-    HomeService
-  ],
+  providers: [HomeService],
 
   exports: [
     ImagesSliderComponent,
     HomeComponent,
     NewsComponent,
     AdviceComponent
-  ],
+  ]
 })
-export class HomeModule { }
+export class HomeModule {}

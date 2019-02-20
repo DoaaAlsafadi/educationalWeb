@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../home.service';
 
 @Component({
   selector: 'app-images-slider',
@@ -6,16 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./images.slider.component.css']
 })
 export class ImagesSliderComponent implements OnInit {
+  dataSource: string[];
+  slideshowDelay = 2000;
 
-  constructor() { }
-dataSource = [
-    "http://www.interestingfactsaboutlife.com/wp-content/uploads/2018/08/Interesting-facts-about-Animals.jpg",
-    "http://www.interestingfactsaboutlife.com/wp-content/uploads/2018/08/Interesting-facts-about-Animals.jpg",
-    "http://www.interestingfactsaboutlife.com/wp-content/uploads/2018/08/Interesting-facts-about-Animals.jpg",
-    "http://www.interestingfactsaboutlife.com/wp-content/uploads/2018/08/Interesting-facts-about-Animals.jpg",
-    "http://www.interestingfactsaboutlife.com/wp-content/uploads/2018/08/Interesting-facts-about-Animals.jpg",
-  ];
-  ngOnInit() {
+  constructor(private homeService: HomeService) {
+    this.dataSource = homeService.getImages();
   }
 
+  ngOnInit() {}
 }

@@ -7,19 +7,7 @@ import { HomeService } from './home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  dataSource: string[];
-  slideshowDelay = 2000;
-  constructor(private homeService : HomeService) {
-    this.dataSource = homeService.getImages();
+  constructor(private homeService: HomeService) {}
 
-   }
-
-  ngOnInit() {
-  }
-
-  valueChanged(e) {
-    this.slideshowDelay = e.value ? 2000 : 0;
-}
-
-  
+  ngOnInit() {}
 }
