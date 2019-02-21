@@ -10,6 +10,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { RouterModule } from '@angular/router';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { CountUpModule } from 'countup.js-angular2';
+import { DxResponsiveBoxModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CountUpModule } from 'countup.js-angular2';
     DxCheckBoxModule,
     HomeRoutingModule,
     RouterModule,
-    CountUpModule
+    CountUpModule,
+    DxResponsiveBoxModule
   ],
   providers: [HomeService],
 

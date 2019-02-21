@@ -1,0 +1,7 @@
+.container {
+    margin: 0;
+    height: 20px;
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: rgba(191, 191, 191, 0.15);
+}

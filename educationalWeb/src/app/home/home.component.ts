@@ -8,6 +8,8 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent implements OnInit {
   constructor(private homeService: HomeService) {}
-
   ngOnInit() {}
+  screen(width) {
+    return width < 700 ? 'sm' : 'lg';
+  }
 }
