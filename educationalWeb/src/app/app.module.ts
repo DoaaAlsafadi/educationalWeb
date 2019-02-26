@@ -12,8 +12,10 @@ import {
   DxMenuModule,
   DxTreeViewModule,
   DxTemplateModule,
-  DxButtonModule
+  DxButtonModule,
+  DxResponsiveBoxModule
 } from 'devextreme-angular';
+
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
@@ -26,7 +28,8 @@ import {
     DxMenuModule,
     DxTreeViewModule,
     DxTemplateModule,
-    DxButtonModule
+    DxButtonModule,
+    DxResponsiveBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

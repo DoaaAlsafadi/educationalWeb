@@ -1,4 +1,33 @@
-<!-- <app-home></app-home> -->
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<!--      devextreme responsive design       -->
+
+<dx-responsive-box singleColumnScreen="sm" [(screenByWidth)]="screen">
+  <dxi-row></dxi-row>
+  <dxi-row></dxi-row>
+  <dxi-row></dxi-row>
+
+  <!--      header     -->
+  <dxi-item>
+    <dxi-location [row]="0"></dxi-location>
+    <div *dxTemplate class="header item">
+      <app-header></app-header>
+    </div>
+  </dxi-item>
+
+  <!--      content     -->
+
+  <dxi-item>
+    <dxi-location [row]="1"></dxi-location>
+    <div *dxTemplate class="content item">
+      <router-outlet></router-outlet>
+    </div>
+  </dxi-item>
+
+  <!--      footer     -->
+
+  <dxi-item>
+    <dxi-location [row]="2"></dxi-location>
+    <div *dxTemplate class="footer item">
+      <app-footer></app-footer>
+    </div>
+  </dxi-item>
+</dx-responsive-box>

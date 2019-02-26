@@ -11,7 +11,7 @@ export class AdviceComponent implements OnInit {
   slideshowDelay = 2000;
 
   constructor(private homeService: HomeService) {
-    this.dataSource = homeService.getImages();
+    // this.dataSource = homeService.getImages();
   }
 
   ngOnInit() {}

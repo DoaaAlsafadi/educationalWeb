@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { CountUpModule } from 'countup.js-angular2';
 import { DxResponsiveBoxModule } from 'devextreme-angular';
-
+import { SlickModule } from 'ngx-slick';
 @NgModule({
   declarations: [
     ImagesSliderComponent,
@@ -28,7 +28,8 @@ import { DxResponsiveBoxModule } from 'devextreme-angular';
     HomeRoutingModule,
     RouterModule,
     CountUpModule,
-    DxResponsiveBoxModule
+    DxResponsiveBoxModule,
+    SlickModule.forRoot()
   ],
   providers: [HomeService],
 

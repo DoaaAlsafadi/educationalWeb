@@ -7,11 +7,11 @@ import { HomeService } from '../home.service';
   styleUrls: ['./images.slider.component.css']
 })
 export class ImagesSliderComponent implements OnInit {
-  dataSource: string[];
-  slideshowDelay = 2000;
+  slides;
+  slideConfig = { slidesToShow: 1, slidesToScroll: 1, autoplay: true };
 
   constructor(private homeService: HomeService) {
-    this.dataSource = homeService.getImages();
+    this.slides = homeService.getImagesSlider();
   }
 
   ngOnInit() {}

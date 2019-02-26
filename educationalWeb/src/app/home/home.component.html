@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
   <app-images-slider></app-images-slider>
   <app-statistics></app-statistics>
 </p>
@@ -9,44 +9,61 @@
 
 <p>
   <app-news></app-news>
-</p>
+</p> -->
 
-<!-- <div id="page">
-  <dx-responsive-box singleColumnScreen="sm" [(screenByWidth)]="screen">
-    <dxi-row [ratio]="1"></dxi-row>
-    <dxi-row [ratio]="1"></dxi-row>
-    <dxi-row [ratio]="1"></dxi-row>
-    <dxi-row [ratio]="1"></dxi-row>
-    <dxi-row [ratio]="1"></dxi-row>
+<dx-responsive-box
+  singleColumnScreen="sm"
+  [(screenByWidth)]="screen"
+  id="responsive_box"
+>
+  <!-- for image slider -->
+  <dxi-row></dxi-row>
+  <!-- for statistics -->
+  <dxi-row></dxi-row>
+  <!-- for Teachers -->
+  <dxi-row></dxi-row>
+  <!-- for news -->
+  <dxi-row></dxi-row>
+  <!-- for advices -->
+  <dxi-row></dxi-row>
 
-    <dxi-col [ratio]="1"></dxi-col>
+  <!--      image slider     -->
+  <dxi-item>
+    <dxi-location [row]="0"></dxi-location>
+    <div *dxTemplate>
+      <app-images-slider></app-images-slider>
+    </div>
+  </dxi-item>
 
-    <dxi-item>
-      <dxi-location [row]="0" [col]="0" [colspan]="3"></dxi-location>
-      <dxi-location [row]="1" [col]="0" [colspan]="2"></dxi-location>
-      <div *dxTemplate class="header item">
-        <p>Header</p>
-      </div>
-    </dxi-item>
-    <dxi-item>
-      <dxi-location [row]="1" [col]="0" screen="lg"></dxi-location>
-      <dxi-location [row]="2" [col]="0" [colspan]="2"></dxi-location>
-      <div *dxTemplate class="content item">
-        <p>
-          <app-images-slider></app-images-slider>
-          <app-statistics></app-statistics>
-          <app-advice></app-advice>
-          <app-news></app-news>
-        </p>
-      </div>
-    </dxi-item>
+  <!--      statistics     -->
 
-    <dxi-item>
-      <dxi-location [row]="3" [col]="0" [colspan]="3"></dxi-location>
-      <dxi-location [row]="4" [col]="0" [colspan]="2"></dxi-location>
-      <div *dxTemplate class="footer item">
-        <p>Footer</p>
-      </div>
-    </dxi-item>
-  </dx-responsive-box>
-</div> -->
+  <dxi-item>
+    <dxi-location [row]="1"></dxi-location>
+    <div *dxTemplate id="statistics">
+      <app-statistics></app-statistics>
+    </div>
+  </dxi-item>
+
+  <!--      Teachers     -->
+
+  <dxi-item>
+    <dxi-location [row]="2"></dxi-location>
+    <div *dxTemplate></div>
+  </dxi-item>
+
+  <!--      news     -->
+  <dxi-item>
+    <dxi-location [row]="2"></dxi-location>
+    <div *dxTemplate>
+      <app-news></app-news>
+    </div>
+  </dxi-item>
+
+  <!--      advices     -->
+  <dxi-item>
+    <dxi-location [row]="2"></dxi-location>
+    <div *dxTemplate>
+      <app-advice></app-advice>
+    </div>
+  </dxi-item>
+</dx-responsive-box>

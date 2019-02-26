@@ -1,0 +1,32 @@
+/* ::ng-deep .dx-widget {
+    height: 100% !important;
+}
+
+::ng-deep .demo-container, #page {
+    height: 100%;
+    min-height: 300px;
+}
+
+::ng-deep .item {
+    height: 100%;
+}
+
+::ng-deep #page p {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+} */
+
+/* ::ng-deep #statistics {
+    background-color: black
+} */
+
+::ng-deep #responsive_box {
+    background-color: #CCD6DD;
+}
+
+::ng-deep #home_img_slider {
+    position: fixed;
+
+    height: 30px !important;
+}
